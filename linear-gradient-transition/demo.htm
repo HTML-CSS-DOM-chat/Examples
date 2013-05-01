@@ -38,7 +38,7 @@
 			background-size:100% 300%;			/* three states effect is 300% */
 			background-position:0 50%;			/* normal state */
 			
-			/* END RELEVANT CODE*/
+			/* END RELEVANT CODE */
 		}
 
 		button:hover
@@ -49,7 +49,17 @@
 		button:active
 		{
 			background-position:0 100%;			/* active state */
+            box-shadow:inset 0 1px rgba(255,255,255,0.6), 0 1px rgba(255,255,255,0.6), 0 0 0 10px rgba(0,0,0,0.1);
 		}
+		
+		button:focus
+		{
+			outline:0;
+			box-shadow:inset 0 1px rgba(255,255,255,0.6), 0 1px rgba(255,255,255,0.6), 0 0 0 10px rgba(0,0,0,0.1);
+		}
+		*::-moz-focus-inner
+			{padding:0 !important;border:none !important;outline:none !important;margin:0 !important}
+
 		
 		</style>
 	</head>
@@ -57,11 +67,11 @@
 
 		<div>
 		
-			<button>Hover and Click me</button>
+            <form><button>Hover and Click me</button></form>
 			
 			<br><br><br>
 			
-			<a href="http://jsfiddle.net/qsSvB/">JsFiddle</a>
+			<a href="http://jsfiddle.net/J2FMs/">JsFiddle</a>
 			
 		</div>
 		
