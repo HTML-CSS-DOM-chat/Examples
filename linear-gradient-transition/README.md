@@ -1,4 +1,4 @@
-Examples
+Linear Gradient Transitions
 ========
 
-Folder specific README?
+<a href="http://jsfiddle.net/qsSvB/">Demo</a>
