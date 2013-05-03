@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+		<style>
+		@import url(http://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo);
+
+		body
+			{background:url('http://i.imgur.com/Cg1kUb4.jpg');}
+
+		.pinboard
+			{padding:60px;}
+
+		.cb
+			{clear:both;}
+			
+		/* postit stack */
+		.pinboard > div
+			{width:40px;float:left;position:relative;outline:0;
+			-moz-transition:all 0.5s ease-in-out;
+			-webkit-transition:all 0.5s ease-in-out;
+			-ms-transition:all 0.5s ease-in-out;
+			transition:all 0.5s ease-in-out;
+			}
+
+		/* appearance of postit */
+		.pinboard > div > div
+			{padding:40px;width:200px;height:200px;color:black;font-size:50px;line-height:1;text-align:center;font-family:Swanky and Moo Moo, cursive;box-shadow:1px 1px rgba(0,0,0,0.5);
+			-moz-transition:all 0.5s ease-in-out;
+			-webkit-transition:all 0.5s ease-in-out;
+			-ms-transition:all 0.5s ease-in-out;
+			transition:all 0.5s ease-in-out;}
+		
+		/* many colors */
+		.pinboard > div:nth-child(5n-5) > div	{background-color:lightblue;}
+		.pinboard > div:nth-child(5n-4) > div	{background-color:salmon;}
+		.pinboard > div:nth-child(5n-3) > div	{background-color:lightpink;}
+		.pinboard > div:nth-child(5n-2) > div	{background-color:gold;}
+		.pinboard > div:nth-child(5n-1) > div	{background-color:palegreen;}
+
+		/* pseudo random position */
+		.pinboard > div:nth-child(8n-8) > div	{-webkit-transform:rotate(2deg);-moz-transform:rotate(2deg);-ms-transform:rotate(2deg);transform:rotate(2deg);top:12px;}
+		.pinboard > div:nth-child(8n-7) > div	{-webkit-transform:rotate(-4deg);-moz-transform:rotate(-4deg);-ms-transform:rotate(2deg);transform:rotate(2deg);top:15px;}
+		.pinboard > div:nth-child(8n-6) > div	{-webkit-transform:rotate(3deg);-moz-transform:rotate(3deg);-ms-transform:rotate(2deg);transform:rotate(2deg);top:7px;}
+		.pinboard > div:nth-child(8n-5) > div	{-webkit-transform:rotate(-2deg);-moz-transform:rotate(-2deg);-ms-transform:rotate(2deg);transform:rotate(2deg);top:-10px;}
+		.pinboard > div:nth-child(8n-4) > div	{-webkit-transform:rotate(3deg);-moz-transform:rotate(3deg);-ms-transform:rotate(2deg);transform:rotate(2deg);top:13px;}
+		.pinboard > div:nth-child(8n-3) > div	{-webkit-transform:rotate(-4deg);-moz-transform:rotate(-4deg);-ms-transform:rotate(2deg);transform:rotate(2deg);top:20px;}
+		.pinboard > div:nth-child(8n-2) > div	{-webkit-transform:rotate(3deg);-moz-transform:rotate(3deg);-ms-transform:rotate(2deg);transform:rotate(2deg);top:-14px;}
+		.pinboard > div:nth-child(8n-1) > div	{-webkit-transform:rotate(-2deg);-moz-transform:rotate(-2deg);-ms-transform:rotate(2deg);transform:rotate(2deg);top:23px;}
+
+		/* hover/focus effects animations */
+		.pinboard > div:hover + div, .pinboard > div:focus + div
+			{margin-left:350px;}
+			
+		.pinboard > div:hover ~ div, .pinboard > div:focus ~ div
+			{width:5px;-webkit-transform:rotate(20deg) scale(1.4);-moz-transform:rotate(20deg) scale(1.4);-ms-transform:rotate(20deg) scale(1.4);transform:rotate(20deg) scale(1.4);opacity:0.2;}
+			
+		.pinboard > div:hover + div > div, .pinboard > div:focus + div > div
+			{box-shadow:20px 20px 60px rgba(0,0,0,0.4);}
+		</style>
+	</head>
+	<body>
+		<div class="pinboard">
+			<div tabindex="0"><div>clean your code! <br> - Mom</div></div>
+			<div tabindex="0"><div>clean your code! <br> - Mom</div></div>
+			<div tabindex="0"><div>clean your code! <br> - Mom</div></div>
+			<div tabindex="0"><div>clean your code! <br> - Mom</div></div>
+			<div tabindex="0"><div>clean your code! <br> - Mom</div></div>
+			<div tabindex="0"><div>clean your code! <br> - Mom</div></div>
+			<div tabindex="0"><div>clean your code! <br> - Mom</div></div>
+			<div tabindex="0"><div>clean your code! <br> - Mom</div></div>
+		</div>
+		<div class="cb"></div>
+		<div style="background:url('http://i.imgur.com/NGco2DF.png');width:460px;height:100px;margin-left:279px;margin-top:22px;"></div>
+	</body>
+</html>
