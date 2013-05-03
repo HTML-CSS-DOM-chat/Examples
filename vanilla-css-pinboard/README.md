@@ -1,1 +1,1 @@
-<a href="http://jsfiddle.net/T4Pht/" target="_blank">JsFiddle Demo</a>
+<a href="http://jsfiddle.net/EzmM7/" target="_blank">JsFiddle Demo</a>
