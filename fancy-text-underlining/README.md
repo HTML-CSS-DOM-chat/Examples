@@ -1,4 +1,4 @@
 Fancy Text Underlining
 ========
 
-<a href="http://jsfiddle.net/3BvbV/1/" target="_blank">JSFiddle Demo</a>
+Check out the live <a href="http://jsbin.com/uzecib/2" target="_blank">JSbin demo</a>
