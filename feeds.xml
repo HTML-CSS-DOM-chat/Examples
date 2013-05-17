@@ -8,6 +8,13 @@
 		<language></language>
 		
 		<item>
+			<title>Hello Feed 2!</title>
+			<link>http://google.com</link>
+			<description>test</description>
+		</item>
+    
+    
+		<item>
 			<title>Hello Feed!</title>
 			<link>http://google.com</link>
 			<description>test</description>
