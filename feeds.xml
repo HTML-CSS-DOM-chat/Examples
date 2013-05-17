@@ -2,6 +2,13 @@
 <rss xmlns:syndacation="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" version="2.0">
   <channel>
   
+  		<item>
+			<title>Hello Feed 13!</title>
+			<link>http://google.com</link>
+			<description>test</description>
+		</item>
+    
+  
 		<item>
 			<title>Hello Feed 12!</title>
 			<link>http://google.com</link>
