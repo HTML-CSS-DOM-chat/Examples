@@ -1,0 +1,73 @@
+#slider {
+	width: 500px;
+	height: 300px;
+	position: relative;
+	overflow: hidden;
+	border: 1px solid green;
+	padding: 20px;
+}
+#slider ul {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+#slider li {
+	display: inline-block;
+	margin-right: 10px;
+	height: 100%;
+}
+#slider label:hover {
+	cursor: pointer;
+} 
+#slider label::after {
+	content: "/";
+	padding-left: 10px;
+	font-weight: bold;
+}
+#slider input {
+	display: none;
+}
+#slider .content {
+	width: 480px;
+	/*for responsive layouts calc 100% width - padding, but provide a fallback for unsupported browsers*/
+	width: calc(100% - 40px);
+	height: 220px;
+	/* top position + bottom content = 70px */
+	height: calc(100% - 70px);
+	overflow: hidden;
+	position: absolute;
+	top: 50px;
+	left: 20px;
+	-webkit-transition: all 500ms ease-in-out;
+	 -moz-transition: all 500ms ease-in-out;
+	  -ms-transition: all 500ms ease-in-out;
+	   -o-transition: all 500ms ease-in-out;
+		  transition: all 500ms ease-in-out;
+}
+
+/*default transition is applied to all slides*/
+#slider input:not(:checked) ~ .content {
+	opacity: 0;
+}
+
+/*you could add these classes to the ul for it to affect all slides!*/
+#slider .fromTop input:not(:checked) ~ .content {
+	top: 500px;
+}
+#slider .fromRight input:not(:checked) ~ .content {
+	left: 600px;
+}
+#slider .scale input:not(:checked) ~ .content {
+	-webkit-transform: scale(0);
+	 -moz-transform: scale(0);
+	  -ms-transform: scale(0);
+	   -o-transform: scale(0);
+		  transform: scale(0);
+}
+#slider .spin input:not(:checked) ~ .content {
+	-webkit-transform: scale(0) rotate(360deg);
+	 -moz-transform: scale(0) rotate(360deg);
+	  -ms-transform: scale(0) rotate(360deg);
+	   -o-transform: scale(0) rotate(360deg);
+		  transform: scale(0) rotate(360deg);
+}
